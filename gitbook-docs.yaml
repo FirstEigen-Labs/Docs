@@ -5,6 +5,7 @@ site:
     - type: space
       key: databuck-sdk
       title: DataBuck SDK docs
+      default: true
       path: databuck-sdk
       content:
         directory: ./databuck-sdk
