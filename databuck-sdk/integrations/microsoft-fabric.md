@@ -1,3 +1,0 @@
-# Microsoft Fabric
-
-Coming soon.
