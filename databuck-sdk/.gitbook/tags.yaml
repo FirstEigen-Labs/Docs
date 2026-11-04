@@ -1,0 +1,6 @@
+- tag: feature
+  label: Feature
+  icon: star
+- tag: fix
+  label: Fix
+  icon: wrench

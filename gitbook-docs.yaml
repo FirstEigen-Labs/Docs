@@ -1,0 +1,29 @@
+$schema: https://api.gitbook.com/openapi.yaml#/components/schemas/GitSyncSiteConfig
+site:
+  title: FirstEigen Docs
+  structure:
+    - type: space
+      key: overview
+      title: Overview
+      default: true
+      path: overview
+      content:
+        directory: ./overview
+    - type: space
+      key: databuck-sdk
+      title: DataBuck SDK
+      path: databuck-sdk
+      content:
+        directory: ./databuck-sdk
+    - type: space
+      key: agentbuck-sdk
+      title: AgentBuck SDK
+      path: agentbuck-sdk
+      content:
+        directory: ./agentbuck-sdk
+    - type: space
+      key: mcp
+      title: MCP
+      path: mcp
+      content:
+        directory: ./mcp
