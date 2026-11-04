@@ -1,11 +1,11 @@
-$schema: https://api.gitbook.com/openapi.yaml#/components/schemas/GitSyncSiteConfig
+$schema: https://api.gitbook.com/gitbook-docs.yaml
 site:
   title: FirstEigen Docs
   structure:
     - type: space
       key: databuck-sdk
       title: DataBuck SDK docs
-      default: true
       path: databuck-sdk
+      default: true
       content:
         directory: ./databuck-sdk
