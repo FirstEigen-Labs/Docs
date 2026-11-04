@@ -21,4 +21,4 @@
 
 * [Benchmark](reference/benchmark.md)
 * [Editions and FAQ](reference/editions.md)
-* [Changelog](changelog.md)
+* [Changelog](reference/changelog.md)
