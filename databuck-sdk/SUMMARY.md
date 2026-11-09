@@ -19,5 +19,4 @@
 
 ## Reference
 
-* [Editions and FAQ](reference/editions.md)
-* [Changelog](changelog.md)
+* [FAQ](reference/editions.md)
