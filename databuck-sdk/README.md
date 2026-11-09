@@ -39,7 +39,6 @@ Everything runs in your own Spark environment. Your data never leaves it, and th
 
 In internal testing against 79 expert-written rules, DataBuck SDK covered **86.1%**, compared with 67.1% for PyDeequ and 62.0% for Databricks DQX. It caught **87% of critical rules** and **14 of 22 cross-column business rules**, which neither alternative caught.
 
-[See the full benchmark](reference/benchmark.md)
 
 ## Get started
 
