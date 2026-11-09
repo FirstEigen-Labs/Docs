@@ -11,7 +11,7 @@ Run the DataBuck SDK in a Microsoft Fabric notebook: set up access, a Lakehouse 
   * your signed `databucksdk.properties` license file
   * policy documents (PDF or DOCX), for AI-generated rules
   * source data as a CSV, or a Delta table already in the Lakehouse
-* Optional: the DataBuck notebook (`DataBuck_SDK.ipynb`), if you received one
+* Optional: the [DataBuck Fabric notebook](https://tmplog1-pub.s3.us-east-1.amazonaws.com/DataBuck_SDK_Fabric_Notebook.ipynb), to import in step 3
 * Optional: a Gemini API key stored in Azure Key Vault, for AI-generated rules
 
 ## 1. Create a user group
@@ -55,7 +55,7 @@ Keep the folder name `databuck_data` consistent. The code in this guide uses it.
 
 ## 3. Create a notebook
 
-In the workspace, select **+ New item** > **Notebook**. If you have the DataBuck notebook, select **Import** > **Notebook** > **From this computer** instead, and choose `DataBuck_SDK.ipynb`.
+To start from the DataBuck notebook, [download it](https://tmplog1-pub.s3.us-east-1.amazonaws.com/DataBuck_SDK_Fabric_Notebook.ipynb), then select **Import** > **Notebook** > **From this computer**, and choose the downloaded file.
 
 <figure><img src="../.gitbook/assets/fabric-import-notebook.png" alt="Workspace Import menu with Notebook and From this computer options"><figcaption><p>Importing a notebook</p></figcaption></figure>
 
