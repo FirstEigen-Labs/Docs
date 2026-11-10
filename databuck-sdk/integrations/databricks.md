@@ -9,13 +9,24 @@ Run the DataBuck SDK in a Databricks notebook: install it, generate data quality
 * Your signed `databucksdk.properties` license file
 * Internet access on first import, to download the JAR
 * Optional: a Gemini API key in a Databricks secret scope, for AI-generated rules
+* Optional: the [DataBuck Databricks notebook](https://datauck-sdk.s3.us-east-1.amazonaws.com/DataBuck_SDK.ipynb), which runs every step below
+
+## Start from the notebook (optional)
+
+The [DataBuck Databricks notebook](https://datauck-sdk.s3.us-east-1.amazonaws.com/DataBuck_SDK.ipynb) contains every step on this page, ready to run. To import it:
+
+1. In the Databricks sidebar, select **Workspace** and open the folder you want to use.
+2. Select the **⋮** menu > **Import**.
+3. Choose **URL**, paste the notebook link, then select **Import**.
+
+Update the paths and table names in the notebook to match your workspace, then follow the steps below.
 
 ## 1. Install the SDK
 
 Pin a version so results are reproducible, then restart Python. Restarting clears all variables, so run the next steps after it.
 
 ```python
-%pip install --upgrade --no-cache-dir databuck-sdk==0.5.52
+%pip install --upgrade --no-cache-dir databuck-sdk==0.5.56
 ```
 
 ```python
@@ -47,13 +58,12 @@ The SDK runs profiling on Spark through `databuck-sdk.jar`. Set the full file pa
 os.environ["DATABUCK_SDK_JAR"] = "/Volumes/<catalog>/<schema>/<volume>/databuck-sdk.jar"
 ```
 
-On first import the SDK downloads the JAR to this path and checks its SHA-256 hash. Later imports reuse it.
+On first import the SDK downloads the JAR to this path and checks that it is a valid JAR archive. Later imports reuse it.
 
 | Optional variable | Purpose |
 | --- | --- |
 | `DATABUCK_SDK_AUTO_DOWNLOAD=0` | Skip the automatic download, for example when offline |
 | `DATABUCK_SDK_JAR_URL` | Override the download URL |
-| `DATABUCK_SDK_JAR_SHA256` | Set the expected hash |
 
 ## 4. Import and verify
 
