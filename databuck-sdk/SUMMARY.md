@@ -16,6 +16,7 @@
 
 * [Databricks](integrations/databricks.md)
 * [Microsoft Fabric](integrations/microsoft-fabric.md)
+* [AWS Glue](integrations/AWS-Glue.md)
 
 ## Reference
 
