@@ -21,8 +21,7 @@ The job runs five steps, in one go or in two runs with a review in between.
 3. **Review (optional).** Keep, edit or remove rules, or skip this step.
 4. **Convert and run.** DataBuck converts the rules to GX Expectations and runs them.
 5. **Report.** The per-rule results are written to S3.
-![Architecture of the Glue job](images/architecture.png)
-
+![Architecture of the Glue job](<figure><img src="../.gitbook/assets/glue-architecture.png"\></figure>)
 *Figure 1. Discovered rules are written to S3, where you can review them before they run.*
 
 ### What the DataBuck SDK does for you
@@ -233,7 +232,7 @@ This pattern fits when your team has standardized on GX, or you need rules that 
 
 Writing rules by hand is the slow part of data quality, and statistics alone leave out what the business requires. The DataBuck SDK discovers candidate rules from your data and your policy documents, you can review them, and DataBuck converts them into GX Expectations and runs them. On AWS Glue, all of it fits in one Spark job that keeps its files in S3, its key in Secrets Manager and its libraries in job parameters. The job script, `run_gx_validation.py`, and the library it imports, `databuck_gx_lib.py`, accompany this article.
 
-**Source code:** [REPOSITORY LINK - add before publishing]
+**Source code:** [click here](https://github.com/angsumandutta/databuck-gx-bridge/tree/main/glue\_workflow)
 
 A discovered rule is still a candidate. The review step is where your domain knowledge decides what goes into production. To try it, run the discovery-only job on one dataset and read the rules it proposes.
 
