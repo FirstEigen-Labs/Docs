@@ -21,7 +21,8 @@ The job runs five steps, in one go or in two runs with a review in between.
 3. **Review (optional).** Keep, edit or remove rules, or skip this step.
 4. **Convert and run.** DataBuck converts the rules to GX Expectations and runs them.
 5. **Report.** The per-rule results are written to S3.
-![Architecture of the Glue job](<figure><img src="../.gitbook/assets/glue_workflow.png"\></figure>)
+
+<figure><img src="../.gitbook/assets/glue_workflow.png"\></figure>
 *Figure 1. Discovered rules are written to S3, where you can review them before they run.*
 
 ### What the DataBuck SDK does for you
